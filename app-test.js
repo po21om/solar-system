@@ -22,7 +22,6 @@ describe('Planets API Suite', () => {
                     res.should.have.status(200);
                     res.body.should.have.property('id').eql(1);
                     res.body.should.have.property('name').eql('Mercury');
-                    res.body.should.have.property('name').eql('Some text to trigger error ;)');
                 done();
               });
         });
